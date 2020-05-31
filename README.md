@@ -16,7 +16,7 @@
 
 ## Introduction
 Student Code-in is a 8 weeks long open source project. 
-In this,all the registered participants would get an exquisite opportunity to interact with the mentors and the Organizing Team. 
+In this,all the registered participants would get an exquisite opportunity to interact with the mentors and the Organizing Team 
 
 
 ## Why SCI?
