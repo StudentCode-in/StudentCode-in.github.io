@@ -1,4 +1,4 @@
-<img src="assets/img/Screenshot_2020-05-31 Student Code-In.png" alt="website" />
+<img src="assets/img/CoverImg.jpg" alt="website" />
 
 # [Student Code In](https://scodein.tech/)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
