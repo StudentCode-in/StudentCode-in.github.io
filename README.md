@@ -51,5 +51,5 @@ This project is licensed under the MIT License - you can see [LICENSE](https://g
 ## Contact Us
 If you have anything to share, anything at all, feel free to drop by the Student Code In  on Discord and say hi. 
 We would love to hear from you. 
-You can also contact [Archit](https://github.com/itsallarchit) by email [archit@scodein.tech](mailto:archit@scodein.tech?Subject=Student Code-In Discuss) or 
+You can also contact [Archit](https://github.com/itsallarchit) by email [archit@scodein.tech](mailto:archit@scodein.tech?Subject=Student Code-In Discuss)_** or 
 [Akanksha](https://github.com/akanksha-raghav) by email (akanksha [at] scodein [dot] tech) or on [Twitter](https://twitter.com/studentcod
