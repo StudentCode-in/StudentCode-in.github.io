@@ -1,8 +1,8 @@
 
 body {
   background: #fff;
-  color: #444;
-  font-family: "Open Sans", sans-serif;
+  color: #413e66;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 700px) {
   #header {
     height: 70px;
     padding: 15px 0;
@@ -190,12 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo h1 a, #header .logo h1 a:hover {
   color: #413e66;
   text-decoration: none;
-}
 
-#header .logo img {
-  padding: 0;
-  margin: 7px 0;
-  max-height: 26px;
 }
 
 .main-pages {
@@ -230,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -411,9 +406,8 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 20vh;
   position: relative;
-  background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
   background-size: cover;
 }
 
@@ -426,7 +420,7 @@ h1, h2, h3, h4, h5, h6 {
     height: auto !important;
   }
   #hero .intro-img {
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -436,10 +430,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   #hero .intro-info {
-    text-align: center;
     padding-top: 40px;
+    text-align: center;
   }
 }
 
@@ -466,6 +460,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 32px;
@@ -479,6 +474,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .intro-info .btn-get-started:hover, #hero .intro-info .btn-services:hover {
   background: #0a98c0;
 }
+
 
 /*--------------------------------------------------------------
 # Sections
@@ -548,6 +544,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   width: 60px;
   height: 60px;
+  background: #fceef3;
 }
 
 #services .icon i {
@@ -556,7 +553,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #services .title {
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 15px;
   font-size: 18px;
 }
@@ -568,13 +565,8 @@ h1, h2, h3, h4, h5, h6 {
 #services .box:hover .title a {
   color: #1bb1dc;
 }
-
-#services .description {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  text-align: left;
-
+.btn-primary{
+  color: white;
 }
 
 .popup-link a{
@@ -605,7 +597,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
     padding: 25px;
     border: 3px solid #888;
-    width: 75%;
+    width: 65%;
 }
 .popup-content p{
     font-size: 17px;
@@ -643,8 +635,16 @@ h1, h2, h3, h4, h5, h6 {
 .popup-container h3{
   margin:10px;
 }
-/*End popup styles*
-
+.right{
+  width: 40%;
+  margin-top:20px; 
+  float: right;
+}
+.left{
+  width: 60%;
+  padding: 20px;
+  float: left;
+}
 
 
 
