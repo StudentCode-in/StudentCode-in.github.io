@@ -595,11 +595,10 @@ h1, h2, h3, h4, h5, h6 {
 .popup-content {
     background-color: #fefefe;
     margin: auto;
-    overflow: scroll;
-    height: 65%;
+    margin-top: 15%;
     padding: 25px;
     border: 3px solid #888;
-    width: 70%;
+    max-width: 65%;
 }
 .popup-content p{
     font-size: 17px;
@@ -638,12 +637,10 @@ h1, h2, h3, h4, h5, h6 {
   margin:10px;
 }
 .right{
-  width: 40%;
   margin-top:20px; 
   float: right;
 }
 .left{
-  width: 60%;
   padding: 20px;
   float: left;
 }
@@ -729,8 +726,14 @@ background: #f5f8fd;
   margin-bottom: 30px;
 }
 
-
-
+.techStack{
+  background-color: #3e7bff;
+  padding: 5px;
+  color: white;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 2px;
+}
 
 
 
