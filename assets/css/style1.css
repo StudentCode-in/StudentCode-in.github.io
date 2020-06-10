@@ -595,9 +595,11 @@ h1, h2, h3, h4, h5, h6 {
 .popup-content {
     background-color: #fefefe;
     margin: auto;
+    overflow: scroll;
+    height: 65%;
     padding: 25px;
     border: 3px solid #888;
-    width: 65%;
+    width: 70%;
 }
 .popup-content p{
     font-size: 17px;
