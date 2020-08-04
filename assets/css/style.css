@@ -988,6 +988,22 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #1bb1dc;
 }
 
+/*Sponsors
+------------------------*/
+.section-header h4{
+  font-weight: 500;
+  font-style: inherit;
+}
+#sponsors .container{
+  text-align: center;
+}
+.partner{
+  margin-top: 50px;
+}
+img{
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
 
 /* Frequently Asked Questions Section
 --------------------------------*/
