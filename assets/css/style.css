@@ -990,6 +990,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Sponsors
 ------------------------*/
+#sponsors{
+  padding: 40px;
+  background-color: #f5f8fd;
+}
 .section-header h4{
   font-weight: 500;
   font-style: inherit;
@@ -1003,6 +1007,8 @@ h1, h2, h3, h4, h5, h6 {
 img{
   margin-bottom: 20px;
   margin-top: 15px;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 /* Frequently Asked Questions Section
