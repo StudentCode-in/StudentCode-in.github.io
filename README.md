@@ -5,15 +5,13 @@
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
 
 ## Welcome
-- [Student Code In](#student-code-in)
-  - [Welcome](#welcome)
-  - [Introduction](#introduction)
-  - [Why SCI?](#why-sci)
-  - [What is our vision?](#what-is-our-vision)
-  - [Contribution](#contribution)
-  - [Code of Conduct](#code-of-conduct)
-  - [License](#license)
-  - [Contact Us](#contact-us)
+* [Introduction](#introduction)
+* [Why SCI?](#why-sci)
+* [What is our vision?](#what-is-our-vision)
+* [How are we doing it?](#how-are-we-doing-it)
+* [Contribution](#contribution)
+* [Code of Conduct](#code-of-conduct)
+* [License](#license)
 
 ## Introduction
 Student Code-in is a 8 weeks long open source project. 
