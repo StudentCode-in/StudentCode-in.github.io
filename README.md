@@ -1,9 +1,9 @@
 <img src="assets/img/CoverImg.jpeg" alt="website" />
 
 # [Student Code In](https://scodein.tech/)
+[![Twitter Follow](https://img.shields.io/twitter/follow/studentcodein?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fstudentcodein&screen_name=studentcodein) <br>
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
-[![Twitter Follow](https://img.shields.io/twitter/follow/studentcodein?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fstudentcodein&screen_name=studentcodein)
 
 ## Welcome
 * [Introduction](#introduction)
