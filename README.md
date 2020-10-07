@@ -12,6 +12,7 @@
 * [Contribution](#contribution)
 * [Code of Conduct](#code-of-conduct)
 * [License](#license)
+* [Contact Us](#contact-us)
 
 ## Introduction
 Student Code-in is a 8 weeks long open source project. 
