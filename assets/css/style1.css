@@ -530,6 +530,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
   text-align: center;
+  cursor: pointer;
 }
 
 #services .box:hover {
@@ -616,7 +617,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2px;
 }
 
-.popup-content a.close{
+.popup-content .close{
     color: #aaaaaa;
     float: right;
     font-size: 28px;
@@ -624,7 +625,10 @@ h1, h2, h3, h4, h5, h6 {
     background: none;
     padding: 0;
     margin: 0;
-    text-decoration:none;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .popup-content a.close:hover{
@@ -638,7 +642,7 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
-.popup-container:target{
+.open-popup{
   visibility: visible;
   opacity: 1;
   transform: scale(1);
