@@ -1209,3 +1209,25 @@ img {
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
 }
+
+/* Custom scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5f8fd;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #535074;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#413e66;
+}
