@@ -9,7 +9,7 @@ name: Labeler
 on: [pull_request]
 
 jobs:
-  label: Hacktoberfest
+  label:
 
     runs-on: ubuntu-latest
 
