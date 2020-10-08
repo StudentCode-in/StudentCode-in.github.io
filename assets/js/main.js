@@ -154,6 +154,19 @@
     }
   });
 
+  // Open popup-container
+  $(".box").click(function(){
+    if(!(event.target.className == "githubLink")){
+      let currentPopup = this.className.split(" ")[1].split("popup")[1];
+      $("#popup"+ currentPopup).addClass("open-popup");
+    }    
+  });
+
+  // Close popup-container
+  $(".close").click(function(){
+    $(".open-popup").removeClass("open-popup");
+  });
+
   // Filter cards by search input
   $(document).ready(function() {
     $("#project-search").on("keyup", function() {
