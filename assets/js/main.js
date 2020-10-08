@@ -154,4 +154,14 @@
     }
   });
 
+  // Filter cards by search input
+  $(document).ready(function() {
+    $("#project-search").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $(".box").parent().filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      })
+    })
+  })
+
 })(jQuery);
