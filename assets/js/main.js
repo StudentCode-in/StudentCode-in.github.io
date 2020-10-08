@@ -167,8 +167,13 @@
     $(".open-popup").removeClass("open-popup");
   });
 
+  //set all techStacks clickable
+  $('.techStack').css({'cursor': 'pointer'});
+
   //Filter cards by techstack
   $(".techStack").click(function(){
+    //close all open popups - for techStack inside popups
+    $(".open-popup").removeClass("open-popup");
     var value = $(this).text().toLowerCase();
       $(".box").parent().filter(function() {
         $(this).toggle($(this).find(".techStack").text().toLowerCase().indexOf(value) > -1);
