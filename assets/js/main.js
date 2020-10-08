@@ -171,8 +171,8 @@
   $(".techStack").click(function(){
     var value = $(this).text().toLowerCase();
       $(".box").parent().filter(function() {
-        $(this).toggle($(this).find(".techStack").text().toLowerCase().indexOf(value) > -1)
-      })
+        $(this).toggle($(this).find(".techStack").text().toLowerCase().indexOf(value) > -1);
+      });
   });
 
   // Filter cards by search input
