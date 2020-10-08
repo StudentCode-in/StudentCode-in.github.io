@@ -1,6 +1,7 @@
 <img src="assets/img/CoverImg.jpeg" alt="website" />
 
 # [Student Code In](https://scodein.tech/)
+[![Twitter Follow](https://img.shields.io/twitter/follow/studentcodein?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fstudentcodein&screen_name=studentcodein) <br>
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
 
@@ -16,7 +17,7 @@
 
 ## Introduction
 Student Code-in is a 8 weeks long open source project. 
-In this,all the registered participants would get an exquisite opportunity to interact with the mentors and the Organizing Team. 
+In this, all the registered participants would get an exquisite opportunity to interact with the mentors and the Organizing Team. 
 
 
 ## Why SCI?
@@ -30,7 +31,7 @@ In this,all the registered participants would get an exquisite opportunity to in
    - STUDENT CODE-IN is founded with a vision to promote all round information to those keen students who are here in the globe finding a way for their obstacle.
    - At STUDENT CODE-IN we have strived to a system that supports and encourages you with varied quality of experiences offered by expert mentors who are the backbone of this initiative.
    - It is our firm believe that as a part of STUDENT CODE-IN you will get array of opportunites to develop your skills in numerous ways.
-   - We assure you that this platform gives you a touch of redefined excellence,vision and wings to your dreams of being a developer.
+   - We assure you that this platform gives you a touch of redefined excellence, vision and wings to your dreams of being a developer.
 
 ## Contribution
 If you’re interested in the project, feel free to open an issue, create a PR, or just come say hi and tell us more about yourself.
