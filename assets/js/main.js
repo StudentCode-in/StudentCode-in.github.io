@@ -156,7 +156,7 @@
 
   // Open popup-container
   $(".box").click(function(){
-    if(!(event.target.className == "githubLink")){
+    if(!(event.target.className == "githubLink" || event.target.className == "techStack")){
       let currentPopup = this.className.split(" ")[1].split("popup")[1];
       $("#popup"+ currentPopup).addClass("open-popup");
     }    
@@ -165,6 +165,14 @@
   // Close popup-container
   $(".close").click(function(){
     $(".open-popup").removeClass("open-popup");
+  });
+
+  //Filter cards by techstack
+  $(".techStack").click(function(){
+    var value = $(this).text().toLowerCase();
+      $(".box").parent().filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      })
   });
 
   // Filter cards by search input
