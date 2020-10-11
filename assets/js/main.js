@@ -190,9 +190,15 @@
     //close all open popups - for techStack inside popups
     $(".open-popup").removeClass("open-popup");
     var value = $(this).text().toLowerCase();
-      $(".box").parent().filter(function() {
-        $(this).toggle($(this).find(".techStack").text().toLowerCase().indexOf(value) > -1);
+    $(".box").parent().filter(function() {
+      var isSameTechStack = false;
+      $(this).find(".techStack").each(function(){
+        if($(this).text().toLowerCase() == value){
+          isSameTechStack = true;
+        }
       });
+      $(this).toggle(isSameTechStack);
+    });
   });
 
   $(".popup-container").click(function () {
