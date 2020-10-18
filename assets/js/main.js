@@ -117,30 +117,10 @@
     });
   });
 
-  // jQuery counterUp (used in Whu Us section)
+  // jQuery counterUp (used in Why Us section)
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
     time: 1000,
-  });
-
-  // Porfolio isotope and filter
-  $(window).on("load", function () {
-    var portfolioIsotope = $(".portfolio-container").isotope({
-      itemSelector: ".portfolio-item",
-    });
-    $("#portfolio-flters li").on("click", function () {
-      $("#portfolio-flters li").removeClass("filter-active");
-      $(this).addClass("filter-active");
-
-      portfolioIsotope.isotope({
-        filter: $(this).data("filter"),
-      });
-    });
-  });
-
-  // Initiate venobox (lightbox feature used in portofilo)
-  $(document).ready(function () {
-    $(".venobox").venobox();
   });
 
   // Testimonials carousel (uses the Owl Carousel library)
@@ -149,24 +129,6 @@
     dots: true,
     loop: true,
     items: 1,
-  });
-
-  // Clients carousel (uses the Owl Carousel library)
-  $(".clients-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 2,
-      },
-      768: {
-        items: 4,
-      },
-      900: {
-        items: 6,
-      },
-    },
   });
 
   // Open popup-container
