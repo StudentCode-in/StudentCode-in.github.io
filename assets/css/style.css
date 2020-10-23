@@ -784,6 +784,11 @@ h6 {
   font-size: 24px;
 }
 
+.modal-dialog{
+   width: 80%;
+   margin: auto;
+}
+
 /*Timeline*/
 
 .timeline {

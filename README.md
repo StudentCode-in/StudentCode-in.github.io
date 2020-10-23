@@ -4,6 +4,8 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/studentcodein?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fstudentcodein&screen_name=studentcodein) <br>
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
+<a href="https://github.com/StudentCode-in/StudentCode-in.github.io/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/StudentCode-in/StudentCode-in.github.io?label=Issues&style=flat-square"/></a>
+
 
 ## Welcome
 * [Introduction](#introduction)
