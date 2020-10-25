@@ -654,6 +654,7 @@ h6 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  font-family: PT serif;
 }
 
 #services .title a {
@@ -665,6 +666,7 @@ h6 {
 }
 
 #services .description {
+  font-family: cursive;
   font-size: 14px;
   line-height: 28px;
   margin-bottom: 0;
