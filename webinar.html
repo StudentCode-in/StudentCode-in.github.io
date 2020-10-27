@@ -121,21 +121,8 @@
 
             <!--Search bar-->
             <div class="search" >
-                <form id="frmSearch" class="search-form" method="get" action="default.html">
-                    <input type="text" id="txtSearch" type="text" name="serach_bar" placeholder="Search...">
-                    <button type="submit" id="submitBtn" class="searchbtn">
-                        <i class="fa fa-search">
-                        </i>
-                    </button>
-                </form>
+                <input type="text" id="txtSearch" class="searchBar" name="serach_bar" placeholder="Search...">
             </div>
-
-            <script type="text/javascript">
-                document.getElementById('frmSearch').onsubmit = function() {
-                    window.location = 'http://www.youtube.com/search?q= ' + document.getElementById('txtSearch').value;
-                    return false;
-                }
-            </script>
             <!-- end of search bar -->
 
             <div class="container">
