@@ -496,15 +496,6 @@ h1, h2, h3, h4, h5, h6 {
   outline: 0;
 }
 
-#submitBtn {
-  background-color: #413e66;
-  color: #fff;
-  float: right;
-  width: 15%;
-  border: 1px solid #413e66;
-  cursor:pointer;
-
-}
 
 /* Media Query For Search Bar */
 
