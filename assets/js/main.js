@@ -180,7 +180,7 @@
           });
     });
   });
-  
+
   // Filter cards by search input
   $(document).ready(function () {
     $("#project-search").on("keyup", function () {
