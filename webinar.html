@@ -50,6 +50,9 @@
 
         </script>
 
+    <!-- Search button logo -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -115,6 +118,26 @@
 
     <main id="main">
         <section id="services" class="services section-bg">
+
+            <!--Search bar-->
+            <div class="search" >
+                <form id="frmSearch" class="search-form" method="get" action="default.html">
+                    <input type="text" id="txtSearch" type="text" name="serach_bar" placeholder="Search...">
+                    <button type="submit" id="submitBtn" class="searchbtn">
+                        <i class="fa fa-search">
+                        </i>
+                    </button>
+                </form>
+            </div>
+
+            <script type="text/javascript">
+                document.getElementById('frmSearch').onsubmit = function() {
+                    window.location = 'http://www.youtube.com/search?q= ' + document.getElementById('txtSearch').value;
+                    return false;
+                }
+            </script>
+            <!-- end of search bar -->
+
             <div class="container">
                 <header class="section-header">
                     <h3>Past Events</h3>
