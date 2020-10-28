@@ -1137,6 +1137,45 @@ img {
   content: "\f2c7" !important;
 }
 
+/* news letter */
+
+.newsletter {
+  padding: 80px 0;
+  background: #2d2b46;
+  /* background: #243c4f; */
+  
+  }
+  
+  .newsletter .content {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2; }
+  .newsletter .content h2 {
+  color: #ffffff;
+  margin-bottom: 40px; }
+  .newsletter .content .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius:0;
+  }
+  .newsletter .content.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #2d2b46;
+  }
+  .newsletter .content .btn {
+  min-height: 50px; 
+  border-radius:0;
+  background: #2d2b46;
+  color: #fff;
+  font-weight:600;
+  border: 1px solid #fff;
+  }
+
+
+/* end news letter */
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
