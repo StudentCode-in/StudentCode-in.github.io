@@ -169,6 +169,18 @@
     }
   });
 
+  //Search Bar on Webinar
+  $(document).ready(function () {
+    $("#txtSearch").on("keyup", function () {
+      var value = $(this).val().toLowerCase();
+      $(".col-sm-10")
+          .parent()
+          .filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+    });
+  });
+
   // Filter cards by search input
   $(document).ready(function () {
     $("#project-search").on("keyup", function () {
@@ -181,7 +193,5 @@
     });
   });
 })(jQuery);
-
-
 // News letter Form
-// use email -->
+// use email
