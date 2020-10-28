@@ -678,6 +678,7 @@ background: #f5f8fd;
   background:#413e66;
 }
 
-
-
-
+/* default color palette for images */
+.img__color-palette{
+  background-color: #413e66;
+}

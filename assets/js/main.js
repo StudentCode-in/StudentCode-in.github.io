@@ -132,8 +132,8 @@
   });
 
   // Open popup-container
-  $(".box").click(function(){
-    if(!(event.target.className == "githubLink" || event.target.className == "techStack")){
+  $(".box").click(function () {
+    if (!(event.target.className == "githubLink" || event.target.className == "techStack")) {
       let currentPopup = this.className.split(" ")[1].split("popup")[1];
       $("#popup" + currentPopup).addClass("open-popup");
     }
@@ -145,17 +145,17 @@
   });
 
   //set all techStacks clickable
-  $('.techStack').css({'cursor': 'pointer'});
+  $('.techStack').css({ 'cursor': 'pointer' });
 
   //Filter cards by techstack
-  $(".techStack").click(function(){
+  $(".techStack").click(function () {
     //close all open popups - for techStack inside popups
     $(".open-popup").removeClass("open-popup");
     var value = $(this).text().toLowerCase();
-    $(".box").parent().filter(function() {
+    $(".box").parent().filter(function () {
       var isSameTechStack = false;
-      $(this).find(".techStack").each(function(){
-        if($(this).text().toLowerCase() == value){
+      $(this).find(".techStack").each(function () {
+        if ($(this).text().toLowerCase() == value) {
           isSameTechStack = true;
         }
       });
@@ -167,6 +167,18 @@
     if ($(event.target).hasClass("open-popup")) {
       $("#" + this.id).removeClass("open-popup");
     }
+  });
+
+  //Search Bar on Webinar
+  $(document).ready(function () {
+    $("#txtSearch").on("keyup", function () {
+      var value = $(this).val().toLowerCase();
+      $(".col-sm-10")
+          .parent()
+          .filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+    });
   });
 
   // Filter cards by search input
@@ -181,3 +193,5 @@
     });
   });
 })(jQuery);
+// News letter Form
+// use email
