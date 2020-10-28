@@ -477,7 +477,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Search Bar */
 .search {
-  border: 4px solid #413e66;
   /*overflow: auto;*/
   width: 500px ;
   margin-left: auto;
