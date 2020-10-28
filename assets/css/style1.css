@@ -477,11 +477,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Search Bar */
 .search {
+  border: 1px;
   /*overflow: auto;*/
-  width: 500px ;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
+  max-width: 380px ;
+  margin: auto ;
   background-color: white;
 
 }
