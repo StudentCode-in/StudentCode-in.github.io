@@ -132,8 +132,8 @@
   });
 
   // Open popup-container
-  $(".box").click(function(){
-    if(!(event.target.className == "githubLink" || event.target.className == "techStack")){
+  $(".box").click(function () {
+    if (!(event.target.className == "githubLink" || event.target.className == "techStack")) {
       let currentPopup = this.className.split(" ")[1].split("popup")[1];
       $("#popup" + currentPopup).addClass("open-popup");
     }
@@ -145,17 +145,17 @@
   });
 
   //set all techStacks clickable
-  $('.techStack').css({'cursor': 'pointer'});
+  $('.techStack').css({ 'cursor': 'pointer' });
 
   //Filter cards by techstack
-  $(".techStack").click(function(){
+  $(".techStack").click(function () {
     //close all open popups - for techStack inside popups
     $(".open-popup").removeClass("open-popup");
     var value = $(this).text().toLowerCase();
-    $(".box").parent().filter(function() {
+    $(".box").parent().filter(function () {
       var isSameTechStack = false;
-      $(this).find(".techStack").each(function(){
-        if($(this).text().toLowerCase() == value){
+      $(this).find(".techStack").each(function () {
+        if ($(this).text().toLowerCase() == value) {
           isSameTechStack = true;
         }
       });
@@ -193,5 +193,5 @@
     });
   });
 })(jQuery);
-
-
+// News letter Form
+// use email
