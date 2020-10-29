@@ -892,9 +892,9 @@
           <div class="content">
             <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
             <div class="input-group">
-              <input type="email" class="form-control" placeholder="Enter your email">
+              <input type="email" class="form-control" placeholder="Enter your email" id="subscribe-email">
               <span class="input-group-btn">
-                <button class="btn" type="submit">Subscribe Now</button>
+                <button class="btn" type="submit" id="btn-subscribe">Subscribe Now</button>
               </span>
             </div>
           </div>
@@ -959,7 +959,13 @@
   <!-- news letter js -->
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+  <script>
+    $(document).ready(function(){
+      $("#btn-subscribe").on('click', function(){
+        $("#subscribe-email").val('');
+      })
+    });
+  </script>
 </body>
 
 </html>
