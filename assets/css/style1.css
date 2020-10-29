@@ -475,39 +475,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #0a98c0;
 }
 
-/* Search Bar */
-.search {
-  border: 1px;
-  /*overflow: auto;*/
-  max-width: 380px ;
-  margin: auto ;
-  background-color: white;
-
-}
-
-#txtSearch {
-  border: 0px;
-  width: 80%;
-}
-
-#txtSearch:focus {
-  outline: 0;
-}
-
-
-/* Media Query For Search Bar */
-
-@media only screen and (min-width : 150px) and (max-width : 767px) {
-  .search
-  {
-    width: 30%;
-    margin: 0 auto;
-  }
-
-}
-
-/* End of search bar style */
-
 
 /*--------------------------------------------------------------
 # Sections

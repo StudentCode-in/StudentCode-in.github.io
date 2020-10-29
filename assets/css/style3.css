@@ -1,3 +1,40 @@
+/* Search Bar */
+.search {
+    border: 2px solid #d6eef8;
+    border-radius: 2px;
+    /*overflow: auto;*/
+    width: 400px;
+    margin: auto ;
+    background-color: white;
+  
+  }
+  
+  #txtSearch {
+    border: 0px;
+    width: 80%;
+  }
+  
+  #txtSearch:focus {
+    outline: 0;
+  }
+  
+  
+  /* Media Query For Search Bar */
+  
+  @media only screen and (min-width : 150px) and (max-width : 767px) {
+    .search
+    {
+      width: 30%;
+      margin: 0 auto;
+    }
+  
+  }
+  
+  /* End of search bar style */
+  
+.card{
+    margin: 40px;
+}
 .video_image{
     height: auto;
     width: 100%;
