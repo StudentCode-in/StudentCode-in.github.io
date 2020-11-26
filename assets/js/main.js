@@ -192,6 +192,17 @@
         });
     });
   });
+
+  // Ensures valid email is supplied
+  $(".subscribe").click(function () {
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(document.getElementById('email').value)) {
+      document.getElementById('email').value = ""
+      document.getElementById('email').placeholder = "Thank you for subscribing to our newsletters."
+    } else {
+      document.getElementById('email').value = ""
+      document.getElementById('email').placeholder = "Please enter a valid email address."
+    }
+  });
 })(jQuery);
 // News letter Form
 // use email
