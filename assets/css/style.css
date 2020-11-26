@@ -2,7 +2,7 @@
   --primary-color: #1bb1dc;
   --secondary-color:   #0a98c0;
   --white-color: #ffffff;
-  
+  var(--white-color)
 }
 
 
