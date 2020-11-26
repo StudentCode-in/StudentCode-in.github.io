@@ -1,3 +1,11 @@
+:root{
+  --primary-color: #1bb1dc;
+  --secondary-color:   #0a98c0;
+  --white-color: #ffffff;
+  
+}
+
+
 body {
   background: #fff;
   color: #444;
@@ -5,14 +13,14 @@ body {
 }
 
 a {
-  color: #1bb1dc;
+  color: var(--primary-color);
   transition: 0.5s;
 }
 
 a:hover,
 a:active,
 a:focus {
-  color: #0a98c0;
+  color: var(--secondary-color);
   outline: none;
   text-decoration: none;
 }
@@ -38,7 +46,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #1bb1dc;
+  background: var(--primary-color);
   color: #fff;
   width: 54px;
   height: 54px;
@@ -81,7 +89,7 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #f2f2f2;
-  border-top: 6px solid #1bb1dc;
+  border-top: 6px solid var(--primary-color);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -134,7 +142,7 @@ h6 {
 }
 
 #topbar .social-links a:hover {
-  color: #1bb1dc;
+  color:var(--primary-color);
 }
 
 #topbar .social-links a:first-child {
@@ -248,7 +256,7 @@ h6 {
 .main-nav a:hover,
 .main-nav .active > a,
 .main-nav li:hover > a {
-  color: #1bb1dc;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -288,7 +296,7 @@ h6 {
 .main-nav .drop-down ul a:hover,
 .main-nav .drop-down ul .active > a,
 .main-nav .drop-down ul li:hover > a {
-  color: #1bb1dc;
+  color: var(--primary-color);
 }
 
 .main-nav .drop-down > a:after {
@@ -467,7 +475,7 @@ h6 {
 }
 
 #hero .intro-info h2 span {
-  color: #1bb1dc;
+  color: var(--primary-color);
 }
 
 @media (max-width: 767px) {
@@ -489,13 +497,14 @@ h6 {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #1bb1dc;
+  background: var(--primary-color);
   color: #fff;
 }
 
 #hero .intro-info .btn-get-started:hover,
 #hero .intro-info .btn-services:hover {
-  background: #0a98c0;
+  background:   color: var(--secondary-color);
+;
 }
 
 /*--------------------------------------------------------------
@@ -568,7 +577,7 @@ h6 {
 #about .about-content ul li i {
   font-size: 20px;
   padding-right: 4px;
-  color: #1bb1dc;
+  color: var(--primary-color);
   float: left;
 }
 
@@ -661,7 +670,7 @@ h6 {
 }
 
 #services .box:hover .title a {
-  color: #1bb1dc;
+  color: var(--primary-color);
 }
 
 #services .description {
@@ -769,8 +778,8 @@ h6 {
 }
 
 #call-to-action .cta-btn:hover {
-  background: #1bb1dc;
-  border: 3px solid #1bb1dc;
+  background: var(--primary-color);
+  border: 3px solid var(--primary-color);
 }
 
 /* Features Section
@@ -971,21 +980,6 @@ h6 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Testimonials Section
 --------------------------------*/
 #testimonials {
@@ -1066,7 +1060,7 @@ h6 {
 }
 
 #testimonials .owl-dot.active {
-  background-color: #1bb1dc;
+  background-color: var(--primary-color);
 }
 
 /*Sponsors
@@ -1183,7 +1177,7 @@ img {
 }
 
 #faq #faq-list a.collapse {
-  color: #1bb1dc;
+  color: var(--primary-color);
 }
 
 #faq #faq-list a.collapsed {
@@ -1236,7 +1230,7 @@ img {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #1bb1dc;
+  background: var(--primary-color);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1249,7 +1243,8 @@ img {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #0a98c0;
+  background:   color: var(--secondary-color);
+;
   color: #fff;
 }
 
