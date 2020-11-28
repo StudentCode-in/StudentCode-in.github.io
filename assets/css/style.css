@@ -1366,17 +1366,14 @@ img {
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
-
-  em {
-    margin-left: 10px;
-    font-size: 1rem;
-  }
 }
 .theme-switch {
   display: inline-block;
   height: 34px;
   position: relative;
   width: 60px;
+  margin-left: 50px;
+  flex: right;
 }
 
 .theme-switch input {
@@ -1406,7 +1403,7 @@ img {
 }
 
 input:checked + .slider {
-  background-color: #66bb6a;
+  background-color: var(--blue-dark);
 }
 
 input:checked + .slider:before {
