@@ -1012,6 +1012,10 @@ h6 {
   transition: all 0.2s;
   background-color: transparent;
   border: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
 }
 
 .timeline-heading:hover{
@@ -1367,16 +1371,12 @@ img {
 // toggle button
 
 .theme-switch-wrapper {
-  display: flex;
-  align-items: center;
 }
 .theme-switch {
   display: inline-block;
   height: 34px;
   position: relative;
   width: 60px;
-  margin-left: 50px;
-  flex: right;
 }
 
 .theme-switch input {
@@ -1414,9 +1414,17 @@ input:checked + .slider:before {
 }
 
 .slider.round {
-  border-radius: 34px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+* {
+  box-sizing: border-box;
 }
