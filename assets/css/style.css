@@ -170,7 +170,7 @@ h6 {
 --------------------------------------------------------------*/
 #topbar {
   padding: 0 0 10px 0;
-  font-size: 14px;
+  font-size: 1.25rem;
   transition: all 0.5s;
 }
 
@@ -1378,7 +1378,8 @@ img {
   height: 34px;
   position: relative;
   width: 60px;
-  margin: 10px;
+  margin: 0px;
+  margin-bottom: 1.5rem;
 }
 
 .theme-switch input {
