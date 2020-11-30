@@ -1371,12 +1371,14 @@ img {
 // toggle button
 
 .theme-switch-wrapper {
+ margin: ;
 }
 .theme-switch {
   display: inline-block;
   height: 34px;
   position: relative;
   width: 60px;
+  margin: 10px;
 }
 
 .theme-switch input {
