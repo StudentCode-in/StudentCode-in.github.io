@@ -53,16 +53,8 @@
 
   <!-- ======= Header ======= -->
   <header id="header">
-    
-    <div id="topbar">
-       <!-- Toggle button -->
-     <div class="theme-switch-wrapper">
-      <label class="theme-switch" for="checkbox">
-          <input type="checkbox" id="checkbox" />
-          <div class="slider round"></div>
-    </label>
-  </div>
 
+    <div id="topbar">
       <div class="container">
         <div class="social-links">
           <a href="https://twitter.com/studentcodein" class="twitter"><i class="fa fa-twitter"></i></a>
@@ -70,7 +62,6 @@
           <a href="https://github.com/StudentCode-in" class="github"><i class="fa fa-github"></i></a>
           <a href="https://t.me/scodein" class="telegram"><i class="fa fa-telegram"></i></a>
         </div>
-            
       </div>
     </div>
 
@@ -82,20 +73,16 @@
         <!-- <a href="#header" class="scrollto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
 
-
-
-
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="#topbar">Home</a></li>
-          <li><a href="#about">About Us</a></li>
           <li><a href="project.html">Projects</a></li>
           <li><a href="#timeline">Timeline</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
           <li><a href="team.html">Our Team</a></li>
           <li class="drop-down"><a href="">More</a>
             <ul>
-              <li><a href="webinar.html">Webinars</a></li>
+              <li><a href="event.html">Events</a></li>
               <li><a href="#faq">FAQ</a></li>
               <li><a href="#footer">Contact Us</a></li>
           </li>
@@ -194,6 +181,24 @@
 
         <div class="row">
 
+          <div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 style="color:#444;" class="modal-title text-info" id="exampleModalLabel">Can't apply</h2>
+                  <button style="color: #ff0000;font-size:45px;" type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p style="margin:0 0 5px 0;">Registration are closed now.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon" style="background: #fceef3;"><i class="ionicons ion-person-stalker"
@@ -203,7 +208,7 @@
                 have basic GIT knowledge or are beginners or even veteran developers, We want you to feel comfortable
                 and excited to apply at Student code-in.</p>
               <a class="btn btn-primary btn-xl js-scroll-trigger" style="width:55%;margin-left:80px;margin-top:40px;"
-                href="https://bit.ly/2zd3U4h">Apply</a>
+                href="https://bit.ly/2zd3U4h" data-toggle="modal" data-target="#popupModal">Apply</a>
             </div>
           </div>
 
@@ -215,7 +220,8 @@
               <p class="description">Open source organizations that would like to participate as a mentor organization
                 in this year’s program can apply.</p><br><br>
               <a class="btn btn-primary btn-xl js-scroll-trigger" style="width:55%;margin-left:80px;margin-top:40px;"
-                href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__ix50hBUQTJRV1gwREZYMjdUVUtMQUlYVjcyVDJTUC4u">Apply</a>
+                href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__ix50hBUQTJRV1gwREZYMjdUVUtMQUlYVjcyVDJTUC4u"
+                data-toggle="modal" data-target="#popupModal">Apply</a>
             </div>
           </div>
 
@@ -228,7 +234,8 @@
                 students grow to their full potential in the field of open source. If you want to change someone's life
                 trajectory from today. So be a mentor with us!!</p>
               <a class="btn btn-primary btn-xl js-scroll-trigger" style="width:55%;margin-left:80px;margin-top:40px;"
-                href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__ix50hBUREY4OVRINVFFNVMyUkpTSjc5MFZPN0kyRS4u">Apply</a>
+                href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__ix50hBUREY4OVRINVFFNVMyUkpTSjc5MFZPN0kyRS4u"
+                data-toggle="modal" data-target="#popupModal">Apply</a>
             </div>
           </div>
     </section>
@@ -370,7 +377,7 @@
               <i class="fa fa-check"></i>
             </div>
             <div class="timeline-panel" style="border-right:10px solid #5BC0DE;">
-              <button class="timeline-heading">
+              <div class="timeline-heading">
                 <h5 class="timeline-title"> Project Announced</h5>
                 <div class="timeline-body">
                   <p>Selected projects announced on website.</p>
@@ -379,14 +386,14 @@
                     12 June,2020
                   </small>
                 </div>
-              </button>
+              </div>
           </li>
           <li>
             <div class="timeline-badge primary">
               <i class="fa fa-check"></i>
             </div>
             <div class="timeline-panel" style="border-left:10px solid #008CBA;">
-              <button class="timeline-heading">
+              <div class="timeline-heading">
                 <h5 class="timeline-title">Project Submission</h5>
            <!-- </div> -->
               <div class="timeline-body">
@@ -396,7 +403,7 @@
                   11:59 pm 15 May,2020
                 </small>
               </div>
-            </button>
+            </div>
             </div>
           </li>
           <li class="timeline-inverted">
@@ -404,7 +411,7 @@
               <i class="fa fa-check"></i>
             </div>
             <div class="timeline-panel" style="border-right:10px solid #43AC6A;">
-              <button class="timeline-heading">
+              <div class="timeline-heading">
                 <h5 class="timeline-title">Participant/Mentor Registration</h5>
               <div class="timeline-body">
                 <p>Begins</p>
@@ -413,7 +420,7 @@
                   11:59 pm 20 May,2020
                 </small>
               </div>
-            </button>
+            </div>
           </div>
           </li>
           <li>
@@ -421,7 +428,7 @@
               <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
             </div>
             <div class="timeline-panel" style="border-left:10px solid #F04124;">
-              <button class="timeline-heading">
+              <div class="timeline-heading">
                 <h5 class="timeline-title">Project Submission</h5>
                 <div class="timeline-body">
                   <p>Ends</p>
@@ -430,14 +437,14 @@
                     11:59 pm 31 May,2020
                   </small>
                 </div>
-              </button>
+              </div>
           </li>
           <li class="timeline-inverted">
             <div class="timeline-badge warning">
               <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
             </div>
             <div class="timeline-panel" style="border-right:10px solid #E99002;">
-              <button class="timeline-heading">
+              <div class="timeline-heading">
                 <h5 class="timeline-title">Participant/Mentor Registration</h5>
                 <div class="timeline-body">
                   <p>Ends</p>
@@ -446,13 +453,13 @@
                     11:59 pm 9 June,2020
                   </small>
                 </div>
-              </button>
+              </div>
           </li>
           <li>
             <div class="timeline-badge info">
               <i class="fa fa-file-pdf-o"></i></div>
             <div class="timeline-panel" style="border-left:10px solid #5BC0DE;">
-              <button class="timeline-heading">
+              <div class="timeline-heading">
                 <h5 class="timeline-title"> Project Announced</h5>
                 <div class="timeline-body">
                   <p>Selected projects announced on website.</p>
@@ -461,13 +468,13 @@
                     12 June,2020
                   </small>
                 </div>
-              </button>
+              </div>
           </li>
           <li class="timeline-inverted">
             <div class="timeline-badge primary">
               <i class="fa fa-thumbs-o-up"></i></div>
             <div class="timeline-panel" style="border-right:10px solid #008CBA;">
-              <button class="timeline-heading">
+              <div class="timeline-heading">
                 <h5 class="timeline-title">Acceptance Mails</h5>
                 <div class="timeline-body">
                   <p>Sent to the selected participants and mentors</p>
@@ -476,13 +483,13 @@
                     Till 14 June,2020
                   </small>
                 </div>
-              </button>
+              </div>
           </li>
           <li>
             <div class="timeline-badge warning">
               <i class="fa fa-users" aria-hidden="true"></i></div>
             <div class="timeline-panel" style="border-left:10px solid #E99002;">
-              <button class="timeline-heading">
+              <div class="timeline-heading">
                 <h5 class="timeline-title">Community Bonding</h5>
                 <div class="timeline-body">
                   <p>Period</p>
@@ -491,13 +498,13 @@
                     14 - 17 June,2020
                   </small>
                 </div>
-              </button>
+              </div>
           </li>
           <li class="timeline-inverted">
             <div class="timeline-badge info">
               <i class="fa fa-hourglass-start" aria-hidden="true"></i></div>
             <div class="timeline-panel" style="border-right:10px solid #5BC0DE;">
-              <button class="timeline-heading">
+              <div class="timeline-heading">
                 <h5 class="timeline-title">SCI</h5>
                 <div class="timeline-body">
                   <p>Begins</p>
@@ -506,13 +513,13 @@
                     18 June,2020
                   </small>
                 </div>
-              </button>
+              </div>
           </li>
           <li>
             <div class="timeline-badge success">
               <i class="fa fa-hourglass-end" aria-hidden="true"></i></div>
             <div class="timeline-panel" style="border-left:10px solid #43AC6A;">
-              <button class="timeline-heading">
+              <div class="timeline-heading">
                 <h5 class="timeline-title">SCI</h5>
                 <div class="timeline-body">
                   <p>Ends</p>
@@ -521,13 +528,13 @@
                     18 August,2020
                   </small>
                 </div>
-              </button>
+              </div>
           </li>
           <li class="timeline-inverted">
             <div class="timeline-badge danger">
               <i class="fa fa-trophy" aria-hidden="true"></i></div>
             <div class="timeline-panel" style="border-right:10px solid #F04124;">
-              <button class="timeline-heading">
+              <div class="timeline-heading">
                 <h5 class="timeline-title">Results Out</h5>
                 <div class="timeline-body">
                   <p>Declartion of results</p>
@@ -536,85 +543,12 @@
                     1 September,2020
                   </small>
                 </div>
-              </button>
+              </div>
             </div>
           </li>
         </ul>
       </div>
       </div>
-      <!-- <ul class="timeline">
-          <li>
-            <div class="timeline-badge primary">
-              <i class="fa fa-check"></i>
-            </div>
-            <div class="timeline-panel" style="border-left:10px solid #008CBA;">
-              <div class="timeline-heading">
-                <h5 class="timeline-title">Project Submission</h5>
-              </div>
-              <div class="timeline-body">
-                <p>Begins</p>
-                <small class="text-muted">
-                  <i class="fa fa-clock-o"></i>
-                  11:59 pm 15 May,2020
-                </small>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-badge success">
-              <i class="fa fa-check"></i>
-            </div>
-            <div class="timeline-panel" style="border-right:10px solid #43AC6A; word-wrap:break-word;">
-              <div class="timeline-heading">
-                <h5 class="timeline-title">Participant/Mentor Registration</h5>
-              </div>
-              <div class="timeline-body">
-                <p>Begins</p>
-                <small class="text-muted">
-                  <i class="fa fa-clock-o"></i>
-                  11:59 pm 20 May,2020
-                </small>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-badge danger">
-              <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
-            </div>
-            <div class="timeline-panel" style="border-left:10px solid #F04124; ">
-              <div class="timeline-heading">
-                <h5 class="timeline-title">Project Submission</h5>
-                <div class="timeline-body">
-                  <p>Ends</p>
-                  <small class="text-muted">
-                    <i class="fa fa-clock-o"></i>
-                    11:59 pm 31 May,2020
-                  </small>
-                </div>
-              </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-badge warning">
-              <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
-            </div>
-            <div class="timeline-panel" style="border-right:10px solid #E99002; word-wrap:break-word;">
-              <div class="timeline-heading">
-                <h5 class="timeline-title">Participant/Mentor Registration</h5>
-                <div class="timeline-body">
-                  <p>Ends</p>
-                  <small class="text-muted">
-                    <i class="fa fa-clock-o"></i>
-                    11:59 pm 9 June,2020
-                  </small>
-                </div>
-              </div>
-          </li>
-          <li>
-            <div class="timeline-badge info">
-              <i class="fa fa-file-pdf-o"></i></div>
-
-          </li>
-        </ul> -->
       </div>
     </section>
 
@@ -672,12 +606,12 @@
             <h4>Community Partner</h4>
             <div class="sponsors">
               <a href="https://commudle.com/">
-                <img class="sponsor-img" src="https://commudle.com/assets/images/commudle-logo192.png"></a>
+                <img class="sponsor-img" src="https://commudle.com/assets/images/commudle-logo192.png" alt="Commudle"></a>
               <a href="https://twitter.com/gdg_nd?lang=en">
-                <img src="https://secure.meetupstatic.com/photos/event/c/6/2/8/600_460370728.jpeg"></a>
+                <img src="https://secure.meetupstatic.com/photos/event/c/6/2/8/600_460370728.jpeg" alt="GDG New Delhi"></a>
               <a href="https://dockship.io/">
                 <img class="sponsor-img"
-                  src="https://gblobscdn.gitbook.com/spaces%2F-LqZ6CHwBrp1meuf2IH1%2Favatar.png?alt=media">
+                  src="https://gblobscdn.gitbook.com/spaces%2F-LqZ6CHwBrp1meuf2IH1%2Favatar.png?alt=media" alt="Dockship">
               </a>
             </div>
           </div>
@@ -686,21 +620,21 @@
             <div class="sponsors">
               <a href="https://codingblocks.com/">
                 <img class="sponsor-img"
-                  src="https://marketing-image-production.s3.amazonaws.com/uploads/0ba295b66f676a965ba15303344f9e553b9e5f54381820d3752eee997e0c5d97cec5dbd68de0edd07b62c69b5d6b11ed15dd4655fef05607afd6a9deab3e1cc1.png"></a>
+                  src="https://marketing-image-production.s3.amazonaws.com/uploads/0ba295b66f676a965ba15303344f9e553b9e5f54381820d3752eee997e0c5d97cec5dbd68de0edd07b62c69b5d6b11ed15dd4655fef05607afd6a9deab3e1cc1.png" alt="Coding Blocks"></a>
             </div>
           </div>
           <div class="sponsor-block">
             <h4>Patrons</h4>
             <div class="sponsors">
               <a href="https://cloudsploit.com/">
-                <img class="sponsor-img" src="https://cloudsploit.com/images/logos/cloudsploit_by_aqua_A02.png"></a>
+                <img class="sponsor-img" src="https://cloudsploit.com/images/logos/cloudsploit_by_aqua_A02.png" alt="CloudSploit"></a>
               <a href="https://www.voiceflow.com/">
                 <img class="sponsor-img"
-                  src="https://uploads-ssl.webflow.com/5bddf05642686caf6d17eb58/5cf52c37420081eec94ed662_VF_Logo_Black.png"></a>
+                  src="https://uploads-ssl.webflow.com/5bddf05642686caf6d17eb58/5cf52c37420081eec94ed662_VF_Logo_Black.png" alt="Vocieflow"></a>
               <a href="https://balsamiq.com/">
-                <img src="https://balsamiq.com/assets/company/brandassets/balsamiq-logo-screen.png"></a>
+                <img src="https://balsamiq.com/assets/company/brandassets/balsamiq-logo-screen.png" alt="Balsamiq"></a>
               <a href="https://givemycertificate.com/">
-                <img class="sponsor-img" src="https://givemycertificate.com/images/gmc_logo.png"></a>
+                <img class="sponsor-img" src="https://givemycertificate.com/images/gmc_logo.png" alt="Give my Certificate"></a>
             </div>
           </div>
         </div>
@@ -877,6 +811,30 @@
 
   </main><!-- End #main -->
 
+  <!-- News Letter section -->
+
+  <section class="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="content">
+            <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+            <div class="input-group">
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              <span class="input-group-btn">
+                <button class="btn subscribe" type="submit" >Subscribe Now</button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end news letter section -->
+
+
+
   <!-- ======= Footer ======= -->
   <footer id="footer" class="section-bg">
 
@@ -925,6 +883,10 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- news letter js -->
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </body>
 
