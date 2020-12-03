@@ -5,6 +5,13 @@
  * License: https://bootstrapmade.com/license/
  */
 
+jQuery(document).ready(function() {
+  jQuery('#loading').fadeOut(2000);
+  setTimeout(() => {
+    document.querySelector('body').style.overflow = "visible";
+  }, 1900);
+});
+
 (function ($) {
   "use strict";
 
