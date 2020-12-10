@@ -4,6 +4,12 @@ body {
   font-family: "Open Sans", sans-serif;
   overflow: hidden;
 }
+/*------------ Own Carousel ------------*/
+.owl-carousel
+{
+  z-index: unset;
+}
+/*---------------- Own Carousel----------- */
 #loading{
   position: absolute;
   width: 100%;
@@ -185,6 +191,7 @@ h6 {
   #header {
     height: 70px;
     padding: 15px 0;
+    
   }
 }
 
@@ -196,6 +203,17 @@ h6 {
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+@media (min-width:992px)
+{
+  #header.header-scrolled, #header.header-pages
+  {
+    display: flex;
+  }
+  .container{
+    max-width:unset;
+    width: 1140px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -880,7 +898,7 @@ h6 {
   left: 50%;
   margin-left: -25px;
   background-color: #999999;
-  z-index: 100;
+  
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -928,6 +946,7 @@ h6 {
 .timeline-title {
   margin-top: 0;
   color: #413e66;
+  font-size: 1.15rem;
 }
 
 .timeline-body > p,
@@ -937,6 +956,56 @@ h6 {
 
 .timeline-body > p + p {
   margin-top: 5px;
+}
+@media(min-width:991px)
+{
+  .timeline-panel{
+    margin: 0px -10px;
+  }
+}
+@media(max-width:991px)
+{
+  .timeline-panel{
+    margin: 0px -20px;
+  }
+}
+@media(max-width:767px)
+{
+  .timeline > li > .timeline-panel{
+    margin: 0px -25px;
+  }
+}
+@media(max-width:576px)
+{
+  .timeline > li > .timeline-panel{
+    margin: 0px 1px;
+    width: 42%;
+  }
+
+  
+}
+@media (max-width:500px)
+{
+  .timeline > li > .timeline-badge {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2em;
+    left:51%;
+    top:22px;
+  }
+  .timeline-title {
+    margin-top: 0;
+    color: #413e66;
+    font-size: 1rem;
+  }
+
+}
+@media(max-width:400px)
+{
+  .timeline > li > .timeline-panel{
+    margin: 0px -15px;
+  }
 }
 
 /* Testimonials Section
