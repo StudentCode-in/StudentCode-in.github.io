@@ -820,12 +820,14 @@
         <div class="col-sm-12">
           <div class="content">
             <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
-            <div class="input-group">
-              <input type="email" class="form-control" id="email" placeholder="Enter your email">
-              <span class="input-group-btn">
-                <button class="btn subscribe" type="submit" >Subscribe Now</button>
-              </span>
-            </div>
+            <form id="newsletterForm">
+              <div class="input-group">
+                	<input type="email" class="form-control" id="email" placeholder="Enter your email">
+                	<span class="input-group-btn">
+                  	<button class="btn subscribe" type="submit" >Subscribe Now</button>
+                	</span>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -881,6 +883,14 @@
   <script src="assets/vendor/wow/wow.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
