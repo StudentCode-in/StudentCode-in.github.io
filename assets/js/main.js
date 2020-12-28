@@ -5,6 +5,13 @@
  * License: https://bootstrapmade.com/license/
  */
 
+jQuery(document).ready(function() {
+  jQuery('#loading').fadeOut(2000);
+  setTimeout(() => {
+    document.querySelector('body').style.overflow = "visible";
+  }, 1900);
+});
+
 (function ($) {
   "use strict";
 
@@ -196,7 +203,6 @@
   // Ensures valid email is supplied
   $(".subscribe").click(function () {
     if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(document.getElementById('email').value)) {
-      document.getElementById('email').value = ""
       document.getElementById('email').placeholder = "Thank you for subscribing to our newsletters."
     } else {
       document.getElementById('email').value = ""
@@ -204,5 +210,50 @@
     }
   });
 })(jQuery);
-// News letter Form
-// use email
+
+
+
+// Storing Newsletter emails in Firebase DB
+
+// Your web app's Firebase configuration
+  var firebaseConfig = {
+            apiKey: "XXXXXXXXXXX",
+            authDomain: "XXXXXXXXXXX",
+            databaseURL: "XXXXXXXXXXX",
+            projectId: "XXXXXXXXXXX",
+            storageBucket: "XXXXXXXXXXX",
+            messagingSenderId: "XXXXXXXXXXX",
+            appId: "XXXXXXXXXXX",
+            measurementId: "XXXXXXXXXXX"
+        };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+// Reference messages collection
+var messagesRef = firebase.database().ref('Emails');
+
+document.getElementById('newsletterForm').addEventListener('submit', submitForm);
+
+//submit form
+function submitForm(e){
+  e.preventDefault();
+
+  // Get values
+  var email = document.getElementById("email").value;
+
+  // Save message
+  saveMessage(email);
+
+  // Clear form
+  document.getElementById('newsletterForm').reset();
+}
+
+// Save message to firebase
+function saveMessage(email){
+  var newMessageRef = messagesRef.push();
+  newMessageRef.set({
+    email:email
+  });
+}

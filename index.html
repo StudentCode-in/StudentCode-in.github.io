@@ -50,6 +50,12 @@
 </head>
 
 <body>
+  
+  <div id="preloader"> 
+    <div id="status">
+      <img src="./assets/img/preloader.gif" alt="LOADING...">
+    </div> 
+  </div>
 
   <!-- ======= Header ======= -->
   <header id="header">
@@ -103,7 +109,7 @@
           <h2>STUDENT CODE-IN</h2>
           <h5><br>A Step Towards<span> Open Source!</span></h5>
           <div>
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="#about" class="btn-get-started scrollto" style="background-color: #1f819b ;">Get Started</a>
           </div>
         </div>
 
@@ -639,7 +645,7 @@
           </div>
         </div>
         <div class="center-it">
-          <a class="btn btn-primary btn-lg sp-btn"
+          <a class="btn btn-primary btn-lg sp-btn" style="background-color: #0078d7 ;"
             href="https://docs.google.com/forms/d/1EvhKxub2kroqk4s8KlBpmLwXE4vTc3-wy5Xa8qK5YTM/edit"
             role="button">Sponsor
             Us</a>
@@ -819,12 +825,14 @@
         <div class="col-sm-12">
           <div class="content">
             <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
-            <div class="input-group">
-              <input type="email" class="form-control" id="email" placeholder="Enter your email">
-              <span class="input-group-btn">
-                <button class="btn subscribe" type="submit" >Subscribe Now</button>
-              </span>
-            </div>
+            <form id="newsletterForm">
+              <div class="input-group">
+                	<input type="email" class="form-control" id="email" placeholder="Enter your email">
+                	<span class="input-group-btn">
+                  	<button class="btn subscribe" type="submit" >Subscribe Now</button>
+                	</span>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -846,7 +854,7 @@
 
         <div class="footer-links">
           <h4>Contact Us</h4>
-          <strong>Email: </strong><a
+          <strong>Email: </strong><a style="color: #1b73cd;"
             href="mailto:<nowiki>scodein@outlook.com?subject=Query link">scodein@outlook.com</a><br>
           </p>
         </div>
@@ -881,12 +889,28 @@
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
 
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
   <!-- news letter js -->
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script    type="text/javascript">
+$(window).load(function() { // makes sure the whole site is loaded
+$('#status').fadeOut(); // will first fade out the loading animation
+$('#preloader').delay(50).fadeOut(100); // will fade out the white DIV that covers the website.
+$('body').delay(50).css({'overflow':'visible'});
+})
+</script>
 
 </body>
 

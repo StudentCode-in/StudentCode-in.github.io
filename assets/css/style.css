@@ -2,8 +2,36 @@ body {
   background: #fff;
   color: #444;
   font-family: "Open Sans", sans-serif;
+  overflow: hidden;
 }
-
+/*------------ Own Carousel ------------*/
+.owl-carousel
+{
+  z-index: unset;
+}
+/*---------------- Own Carousel----------- */
+#loading{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#FFF; /* change if the mask should have another color then white */
+  z-index:99999; /* makes sure it stays on top */
+}
+#status {
+  width:100px;
+  height:100px;
+  position:absolute;
+  left:50%; /* centers the loading animation horizontally one the screen */
+  top:50%; /* centers the loading animation vertically one the screen */
+  background-image:url("../imgs/loader.gif");
+  z-index:9999; /* path to your loading animation */
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size: cover;
+  margin:-50px 0 0 -50px; /* is width and height divided by two */
+}
 a {
   color: #1bb1dc;
   transition: 0.5s;
@@ -147,7 +175,7 @@ h6 {
 #header {
   height: 110px;
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 1;
   transition: all 0.5s;
   padding: 20px 0;
   position: fixed;
@@ -155,7 +183,6 @@ h6 {
   top: 0;
   right: 0;
   transition: all 0.5s;
-  z-index: 997;
 }
 
 #header.header-scrolled,
@@ -175,6 +202,7 @@ h6 {
   #header {
     height: 70px;
     padding: 15px 0;
+    
   }
 }
 
@@ -186,6 +214,17 @@ h6 {
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+@media (min-width:992px)
+{
+  #header.header-scrolled, #header.header-pages
+  {
+    display: flex;
+  }
+  .container{
+    max-width:unset;
+    width: 1140px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -870,7 +909,7 @@ h6 {
   left: 50%;
   margin-left: -25px;
   background-color: #999999;
-  z-index: 100;
+  
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -918,6 +957,7 @@ h6 {
 .timeline-title {
   margin-top: 0;
   color: #413e66;
+  font-size: 1.15rem;
 }
 
 .timeline-body > p,
@@ -927,6 +967,56 @@ h6 {
 
 .timeline-body > p + p {
   margin-top: 5px;
+}
+@media(min-width:991px)
+{
+  .timeline-panel{
+    margin: 0px -10px;
+  }
+}
+@media(max-width:991px)
+{
+  .timeline-panel{
+    margin: 0px -20px;
+  }
+}
+@media(max-width:767px)
+{
+  .timeline > li > .timeline-panel{
+    margin: 0px -25px;
+  }
+}
+@media(max-width:576px)
+{
+  .timeline > li > .timeline-panel{
+    margin: 0px 1px;
+    width: 42%;
+  }
+
+  
+}
+@media (max-width:500px)
+{
+  .timeline > li > .timeline-badge {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2em;
+    left:51%;
+    top:22px;
+  }
+  .timeline-title {
+    margin-top: 0;
+    color: #413e66;
+    font-size: 1rem;
+  }
+
+}
+@media(max-width:400px)
+{
+  .timeline > li > .timeline-panel{
+    margin: 0px -15px;
+  }
 }
 
 /* Testimonials Section
