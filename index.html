@@ -899,7 +899,22 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/app.js"></script>
+
+  <!-- Lazy Load JS Snippet -->
+  <script type="text/javascript">
+    const images = document.querySelectorAll('.lazyload');
+    function handleIntersection(entries) {
+    entries.map((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.src = entry.target.dataset.src;
+        entry.target.classList.add('loaded')
+        observer.unobserve(entry.target);
+      }
+    });
+    }
+    const observer = new IntersectionObserver(handleIntersection);
+    images.forEach(image => observer.observe(image));
+  </script>
 
   <!-- news letter js -->
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
