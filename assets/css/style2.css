@@ -682,3 +682,12 @@ background: #f5f8fd;
 .img__color-palette{
   background-color: #413e66;
 }
+/*Lazy Loading*/
+.lazyload{
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.lazyload.loaded {
+  opacity: 1;
+  height: initial;
+}
