@@ -257,3 +257,20 @@ function saveMessage(email){
     email:email
   });
 }
+
+//Offscreen image defering
+// const lazyImages = document.querySelectorAll('.lazyload');
+
+// function handleIntersection(entries) {
+//   entries.map((entry) => {
+//     if (entry.isIntersecting) {
+//       entry.target.src = entry.target.dataset.src;
+//       entry.target.classList.add('loaded')
+//       observer.unobserve(entry.target);
+//     }
+//   });
+// }
+
+// const observer = new IntersectionObserver(handleIntersection);
+
+// lazyImages.forEach(lazyimage => observer.observe(lazyimage));
