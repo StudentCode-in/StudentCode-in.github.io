@@ -1150,7 +1150,7 @@ img {
 }
 
 .sponsors img {
-  height: 80px;
+  height: 80px !important;
   width: auto;
   margin: 0;
   /* filter: grayscale(90%);
@@ -1364,4 +1364,14 @@ img {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background:#413e66;
+}
+
+/*Lazy Loading*/
+.lazyload{
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.lazyload.loaded {
+  opacity: 1;
+  height: initial;
 }
