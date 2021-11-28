@@ -827,6 +827,26 @@ h6 {
    width: 80%;
    margin: auto;
 }
+#exampleModalLabel{
+  color:#413e66;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight:550;
+}
+.modal-body{
+  color:#0c0102;
+  font-weight: 540;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:20px;
+}
+.modal-content{
+  border:1.5px solid #312f4d;
+  border-radius:17px;
+  -webkit-border-radius:17px;
+  -moz-border-radius:17px;
+  -ms-border-radius:17px;
+  -o-border-radius:17px;
+  box-shadow: #010505;
+}
 
 /*Timeline*/
 
@@ -926,6 +946,7 @@ h6 {
   left: -15px;
   right: auto;
 }
+
 
 .timeline > li.timeline-inverted > .timeline-panel:after {
   border-left-width: 0;
